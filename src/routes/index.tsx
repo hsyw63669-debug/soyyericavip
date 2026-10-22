@@ -116,6 +116,7 @@ const localizeProfileDom=(country:string)=>{
 // Valores atuais dos planos
 const planAmounts: Record<string, number> = {
   "Mensal": 19.90,
+  "Vitalicio27": 27.90,
   "Trimestral": 34.90,
   "Anual": 54.90,
 };
@@ -358,7 +359,7 @@ function ProfilePage() {
       </div>
       <div className="relative">
        <span className="absolute -top-[15px] left-[20px] z-10 rounded-full bg-[#effbef] px-[12px] py-[4px] text-[12px] font-medium leading-[16px] text-[#3da95e]">Economize 75%</span>
-       <button type="button" onClick={()=>setModal("WhatsApp")} className="flex h-[46px] w-full items-center justify-center rounded-full bg-gradient-to-r from-[#25D366] to-[#128C7E] px-4 text-center text-[15px] font-medium leading-5 text-white active:scale-[.99]">Assinar agora R$ 27,90</button>
+       <button type="button" onClick={()=>{trackEvent("vip_whatsapp_clicked",{amount:27.90});setModal(null);setPaymentPlan("Vitalicio27");}} className="flex h-[46px] w-full items-center justify-center rounded-full bg-gradient-to-r from-[#ff9b45] to-[#f8a39b] px-4 text-center text-[15px] font-medium leading-5 text-black active:scale-[.99]">Assinar agora R$ 27,90</button>
        <div className="mt-[10px] pr-[12px] text-right text-[11px] font-normal leading-[14px] text-[#182a46]">Preço original <span className="line-through">R$ 60,00</span></div>
       </div>
     </section>}
