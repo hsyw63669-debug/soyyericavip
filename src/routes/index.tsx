@@ -8,8 +8,8 @@ import { Bookmark, ChevronDown, ChevronUp, Gift, Heart, Image as ImageIcon, Lock
 export const Route = createFileRoute("/")({ component: ProfilePage });
 type Tab = "Todos" | "Fotos" | "Vídeos" | "Pagos";
 const tabs: Tab[] = ["Todos", "Fotos", "Vídeos", "Pagos"];
-const profileImage = "/perfil.jpg";
-const bannerImage = "/capa.jpg";
+const profileImage = "/ipeDt.png";
+const bannerImage = "/TRZ7X.jpg";
 const lockedCompositeImage="https://d2ol7oe51mr4n9.cloudfront.net/user_3621XdTB4EGcH3ltocWdMfyuXoS/5e2c3a2e-6c7c-4567-ba63-0946e65094df.jpg";
 const vipPreviewVideos=["/card1.mp4","/card2.mp4","/card3.mp4","/card4.mp4"];
 const vipAccessUrl="https://t.me/+DOOlT5WKtnI5NjVh";
@@ -398,7 +398,7 @@ function ProfilePage() {
       {[0].map((i)=><article key={i} className="overflow-hidden rounded-[24px] border border-[#eee7e3] bg-white">
        <div className="flex h-[82px] items-center justify-between px-4"><div className="flex items-center gap-3"><img src={profileImage} alt="" className="h-[58px] w-[58px] rounded-full object-cover"/><div><div className="flex items-center gap-1 text-[15px] font-bold">Erica Santos <span className="text-[#4389d8]">✓</span></div><div className="text-[14px] text-[#34363b]">@soyyerica</div></div></div><button type="button" aria-label="Mais opções" onClick={()=>setModal("Escolha seu plano")} className="px-1 text-xl">⋮</button></div>
        <button type="button" onClick={()=>{trackEvent("media_clicked",{country:country||"BR",event_step:"post"});setActivePost(true);window.scrollTo({top:0,behavior:"smooth"})}} aria-label="Abrir publicação bloqueada" className="relative block aspect-[.78] w-full overflow-hidden bg-[#f4eadb]">
-        <img src="/card-foto.png" alt="" className="absolute inset-0 h-full w-full object-cover"/>
+        <img src="/TRZ7X.jpg" alt="" className="absolute inset-0 h-full w-full object-cover"/>
        </button>
        <div className="flex h-[58px] items-center justify-between px-5 text-[#606166]"><div className="flex items-center gap-4"><button type="button" aria-label="Curtir" onClick={()=>setLiked(v=>!v)} className={liked?"text-[#df8749]":""}><Heart size={25} fill={liked?"currentColor":"none"}/></button><span className="text-[14px] font-medium">234k</span><button type="button" aria-label="Comentários" onClick={()=>setComments(v=>!v)}><MessageCircle size={25}/></button><button type="button" aria-label="Assinar" onClick={()=>setModal("Escolha seu plano")}><span className="flex h-6 w-6 items-center justify-center rounded-full border border-current text-[16px]">$</span></button></div><button type="button" aria-label="Salvar" onClick={()=>setSaved(v=>!v)} className={saved?"text-[#df8749]":""}><Bookmark size={25} fill={saved?"currentColor":"none"}/></button></div>
       </article>)}
@@ -413,7 +413,7 @@ function ProfilePage() {
     <article className="overflow-hidden rounded-[24px] border border-[#eee7e3] bg-white">
      <div className="flex h-[82px] items-center justify-between px-4"><div className="flex items-center gap-3"><img src={profileImage} alt="" className="h-[58px] w-[58px] rounded-full object-cover"/><div><div className="flex items-center gap-1 text-[15px] font-bold">Erica Santos <span className="text-[#4389d8]">✓</span></div><div className="text-[14px] text-[#34363b]">@soyyerica</div></div></div><button type="button" aria-label="Mais opções" onClick={()=>setModal("Escolha seu plano")} className="px-1 text-xl">⋮</button></div>
      <button type="button" onClick={()=>setModal("Escolha seu plano")} aria-label="Conteúdo bloqueado" className="relative block aspect-[.78] w-full overflow-hidden bg-[#f4eadb]">
-      <img src="/card-foto.png" alt="" className="absolute inset-0 h-full w-full object-cover"/>
+      <img src="/TRZ7X.jpg" alt="" className="absolute inset-0 h-full w-full object-cover"/>
      </button>
      <div className="flex h-[58px] items-center justify-between px-5 text-[#606166]"><div className="flex items-center gap-4"><button type="button" aria-label="Curtir" onClick={()=>setLiked(v=>!v)} className={liked?"text-[#df8749]":""}><Heart size={25} fill={liked?"currentColor":"none"}/></button><span className="text-[14px] font-medium">234k</span><button type="button" aria-label="Comentários" onClick={()=>setComments(v=>!v)}><MessageCircle size={25}/></button><button type="button" aria-label="Assinar" onClick={()=>setModal("Escolha seu plano")}><span className="flex h-6 w-6 items-center justify-center rounded-full border border-current text-[16px]">$</span></button></div><button type="button" aria-label="Salvar" onClick={()=>setSaved(v=>!v)} className={saved?"text-[#df8749]":""}><Bookmark size={25} fill={saved?"currentColor":"none"}/></button></div>
      {comments&&<div className="border-t border-[#f0ece9] p-3"><p className="mb-2 text-sm">Comentários disponíveis para assinantes.</p><button type="button" onClick={()=>setModal("Escolha seu plano")} className="text-sm font-semibold text-[#df8749]">Assinar para comentar</button></div>}
