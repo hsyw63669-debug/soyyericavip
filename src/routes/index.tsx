@@ -12,25 +12,25 @@ const profileImage = "/ipeDt.png";
 const bannerImage = "/TRZ7X.jpg";
 const lockedCompositeImage="https://d2ol7oe51mr4n9.cloudfront.net/user_3621XdTB4EGcH3ltocWdMfyuXoS/5e2c3a2e-6c7c-4567-ba63-0946e65094df.jpg";
 const vipPreviewVideos=["/card1.mp4","/card2.mp4","/card3.mp4","/card4.mp4"];
-const vipAccessUrl="https://t.me/+DOOlT5WKtnI5NjVh";
+const vipAccessUrl="https://t.me/+SamBGNU0Wm1lOTA5";
 const bannerVideo = bannerImage;
-const telegramLink = "https://t.me/+DOOlT5WKtnI5NjVh";
-const tax9_90TelegramBot = "https://t.me/+DOOlT5WKtnI5NjVh";
-const telegramBotLink = "https://t.me/+DOOlT5WKtnI5NjVh";
+const telegramLink = "https://t.me/+SamBGNU0Wm1lOTA5";
+const tax9_90TelegramBot = "https://t.me/+SamBGNU0Wm1lOTA5";
+const telegramBotLink = "https://t.me/+SamBGNU0Wm1lOTA5";
 const foreignTelegramBotLink = telegramBotLink;
-const donaMariaTelegramBot = "https://t.me/+DOOlT5WKtnI5NjVh";
-const donaMariaGroup = "https://t.me/+DOOlT5WKtnI5NjVh";
-const tsunakaVipGroup = "https://t.me/+DOOlT5WKtnI5NjVh";
+const donaMariaTelegramBot = "https://t.me/+SamBGNU0Wm1lOTA5";
+const donaMariaGroup = "https://t.me/+SamBGNU0Wm1lOTA5";
+const tsunakaVipGroup = "https://t.me/+SamBGNU0Wm1lOTA5";
 const packTelegramLinks: Record<string,string> = {
- "5 vídeos":"https://t.me/+DOOlT5WKtnI5NjVh",
- "8 vídeos":"https://t.me/+DOOlT5WKtnI5NjVh",
- "12 vídeos":"https://t.me/+DOOlT5WKtnI5NjVh",
- "15 fotos":"https://t.me/+DOOlT5WKtnI5NjVh",
- "25 fotos":"https://t.me/+DOOlT5WKtnI5NjVh",
- "40 fotos":"https://t.me/+DOOlT5WKtnI5NjVh",
- "20 fotos + 4 vídeos":"https://t.me/+DOOlT5WKtnI5NjVh",
- "30 fotos + 6 vídeos":"https://t.me/+DOOlT5WKtnI5NjVh",
- "45 fotos + 10 vídeos":"https://t.me/+DOOlT5WKtnI5NjVh"
+ "5 vídeos":"https://t.me/+SamBGNU0Wm1lOTA5",
+ "8 vídeos":"https://t.me/+SamBGNU0Wm1lOTA5",
+ "12 vídeos":"https://t.me/+SamBGNU0Wm1lOTA5",
+ "15 fotos":"https://t.me/+SamBGNU0Wm1lOTA5",
+ "25 fotos":"https://t.me/+SamBGNU0Wm1lOTA5",
+ "40 fotos":"https://t.me/+SamBGNU0Wm1lOTA5",
+ "20 fotos + 4 vídeos":"https://t.me/+SamBGNU0Wm1lOTA5",
+ "30 fotos + 6 vídeos":"https://t.me/+SamBGNU0Wm1lOTA5",
+ "45 fotos + 10 vídeos":"https://t.me/+SamBGNU0Wm1lOTA5"
 };
 const brendaWhatsapp = "11958052230";
 const SUPABASE_URL = "https://jrpazrngophtyuvxroyx.supabase.co";
