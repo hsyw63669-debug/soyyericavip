@@ -354,11 +354,11 @@ function ProfilePage() {
       <div className="mb-[18px] flex items-center gap-2 text-[16px] font-semibold leading-5"><span className="text-[19px] text-[#ff8736]">✦</span><span>Oferta de assinatura</span></div>
       <div className="mb-[47px] flex items-center gap-2">
        <img src={profileImage} alt="" className="h-[28px] w-[28px] shrink-0 rounded-full object-cover"/>
-       <div className="flex h-[35px] flex-1 items-center rounded-[10px] bg-white px-[10px] text-[14px] font-normal leading-5 text-[#182a46]">Apenas para os 5 primeiros 🔥</div>
+       <div className="flex h-[35px] flex-1 items-center rounded-[10px] bg-white px-[10px] text-[14px] font-normal leading-5 text-[#182a46]">Meu WhatsApp + VIP vitalício • Apenas para os 10 primeiros 🔥</div>
       </div>
       <div className="relative">
        <span className="absolute -top-[15px] left-[20px] z-10 rounded-full bg-[#effbef] px-[12px] py-[4px] text-[12px] font-medium leading-[16px] text-[#3da95e]">Economize 75%</span>
-       <button type="button" onClick={()=>goToCheckout("Mensal")} className="flex h-[46px] w-full items-center justify-center rounded-full bg-gradient-to-r from-[#ff9b45] to-[#f8a39b] px-4 text-center text-[15px] font-medium leading-5 text-black active:scale-[.99]">Assinar agora R$ 19,90</button>
+       <button type="button" onClick={()=>setModal("WhatsApp")} className="flex h-[46px] w-full items-center justify-center rounded-full bg-gradient-to-r from-[#25D366] to-[#128C7E] px-4 text-center text-[15px] font-medium leading-5 text-white active:scale-[.99]">Assinar agora R$ 27,90</button>
        <div className="mt-[10px] pr-[12px] text-right text-[11px] font-normal leading-[14px] text-[#182a46]">Preço original <span className="line-through">R$ 60,00</span></div>
       </div>
     </section>}
