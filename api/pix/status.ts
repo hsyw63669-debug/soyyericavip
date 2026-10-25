@@ -1,4 +1,3 @@
-
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 
 const API_BASE = (process.env["SIGILOPAY_API_BASE"] || "").replace(/\/+$/, "");
@@ -140,4 +139,3 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     });
   }
 }
-
